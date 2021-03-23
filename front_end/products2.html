@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>1st Front End We Built</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="products2.js" defer></script>
+  </head>
+  <body>
+    <h1>Hey from the .HTML file!</h1>
+    <div id="app">
+      {{message_1}}
+      <p><button v-on:click="showAllProducts">Show All of the Products</button></p>
+      <p>
+        All The Products!
+        <input type="text" v-model="products" />
+      </p>
+      <p>
+        <button v-on:click="showFirstProduct">Show the first product</button>
+        <input type="text" v-model="products" />
+      </p>
+    </div>
+  </body>
+</html>

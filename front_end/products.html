@@ -10,6 +10,8 @@
     <h1>Hello from HTML!</h1>
     <div id="app">
       <p>{{ stuff here }}</p>
+      <p><button v-on:click="showAllProducts">See All Prodcuts</button></p>
+      <div v-for="prodcut in products">{{product.id} . {{product.name}}</div>
     </div>
   </body>
 </html>
